@@ -1,0 +1,60 @@
+{
+    "products": [
+      {
+        "nombre": "Piña Fresca",
+        "categoria": "Frutas",
+        "precio": 10.50,
+        "descuento": 8.30,
+        "mas_vendido": true,
+        "nuevo": true,
+        "oferta": true,
+        "imagenes": [
+          "pina.jpg"
+        ],
+        "descripcion": "Disfruta de la frescura y el sabor de la Piña Fresca, una fruta tropical que es perfecta para cualquier ocasión. Su dulce y jugoso interior la convierte en un snack ideal, y su versatilidad la hace perfecta para ensaladas, batidos o como complemento en tus platillos favoritos. ¡Añádela a tu carrito y disfruta de su delicioso sabor!",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "leche entera",
+        "categoria": "Lácteos",
+        "precio": 36.50,
+        "descuento": 34.35,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": true,
+        "imagenes": [
+          "pina.jpg"
+        ],
+        "descripcion": "Descripcion de una leche entrera  como producto",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Refresco",
+        "categoria": "Bebidas",
+        "precio": 35.15,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "pina.jpg"
+        ],
+        "descripcion": "Descripcion de un refresco normal comun y corriente",
+        "disponibilidad": true
+      },
+      {
+        "nombre": "Carne Molida",
+        "categoria": "Carnes",
+        "precio": 20.10,
+        "descuento": 0,
+        "mas_vendido": false,
+        "nuevo": true,
+        "oferta": false,
+        "imagenes": [
+          "pina.jpg"
+        ],
+        "descripcion": "Descripcion de una carne normal",
+        "disponibilidad": true
+      }
+    ]
+  }
