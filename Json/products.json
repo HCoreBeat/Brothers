@@ -1,60 +1,914 @@
 {
-    "products": [
-      {
-        "nombre": "Piña Fresca",
-        "categoria": "Frutas",
-        "precio": 10.50,
-        "descuento": 8.30,
-        "mas_vendido": true,
-        "nuevo": true,
-        "oferta": true,
-        "imagenes": [
-          "pina.jpg"
-        ],
-        "descripcion": "Disfruta de la frescura y el sabor de la Piña Fresca, una fruta tropical que es perfecta para cualquier ocasión. Su dulce y jugoso interior la convierte en un snack ideal, y su versatilidad la hace perfecta para ensaladas, batidos o como complemento en tus platillos favoritos. ¡Añádela a tu carrito y disfruta de su delicioso sabor!",
-        "disponibilidad": true
-      },
-      {
-        "nombre": "leche entera",
-        "categoria": "Lácteos",
-        "precio": 36.50,
-        "descuento": 34.35,
-        "mas_vendido": false,
-        "nuevo": true,
-        "oferta": true,
-        "imagenes": [
-          "pina.jpg"
-        ],
-        "descripcion": "Descripcion de una leche entrera  como producto",
-        "disponibilidad": true
-      },
-      {
-        "nombre": "Refresco",
-        "categoria": "Bebidas",
-        "precio": 35.15,
-        "descuento": 0,
-        "mas_vendido": false,
-        "nuevo": true,
-        "oferta": false,
-        "imagenes": [
-          "pina.jpg"
-        ],
-        "descripcion": "Descripcion de un refresco normal comun y corriente",
-        "disponibilidad": true
-      },
-      {
-        "nombre": "Carne Molida",
-        "categoria": "Carnes",
-        "precio": 20.10,
-        "descuento": 0,
-        "mas_vendido": false,
-        "nuevo": true,
-        "oferta": false,
-        "imagenes": [
-          "pina.jpg"
-        ],
-        "descripcion": "Descripcion de una carne normal",
-        "disponibilidad": true
-      }
-    ]
-  }
+  "products": [
+    {
+      "nombre": "Combo de 10 panes (suaves)",
+      "categoria": "Despensa",
+      "precio": 3.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pan_suave.jpg"
+      ],
+      "descripcion": "Un combo de panes frescos y suaves.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Combo de 10 panes (flauta)",
+      "categoria": "Despensa",
+      "precio": 6.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "panes_flauta.jpg"
+      ],
+      "descripcion": "Un combo de panes estilo flauta.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Combo de 8 panes (hamburguesa)",
+      "categoria": "Despensa",
+      "precio": 6.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pan_hamburguesa.jpg"
+      ],
+      "descripcion": "Un combo de panes para hamburguesas.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "10-15Lbs Pernil de Cerdo asado + (Añadidos)",
+      "categoria": "Carnicería",
+      "precio": 110.00,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pernil_cerdo_asado.jpg"
+      ],
+      "descripcion": "Se entregan con una caja de cerveza Cristal (24 cervezas). 10 refrescos de lata, según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 FIL de huevos 60u",
+      "categoria": "Despensa",
+      "precio": 29.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "huevo.jpg"
+      ],
+      "descripcion": "Dos filas de 60 unidades de huevos frescos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Fil de huevos 30u",
+      "categoria": "Despensa",
+      "precio": 15.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "huevo.jpg"
+      ],
+      "descripcion": "Una fila de 30 unidades de huevos frescos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Paquetes de codito 500g c/u",
+      "categoria": "Despensa",
+      "precio": 5.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "codito.jpg"
+      ],
+      "descripcion": "Dos paquetes de pasta de codito de 500g cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Paquetes de Spaghetti 500g c/u",
+      "categoria": "Despensa",
+      "precio": 5.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "espagueti.jpg"
+      ],
+      "descripcion": "Dos paquetes de spaghetti de 500g cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 latas de Pasta de Tomate 400g c/u Vima",
+      "categoria": "Despensa",
+      "precio": 5.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pasta_de_tomate_vima.jpg"
+      ],
+      "descripcion": "Dos latas de pasta de tomate marca Vima de 400g cada una.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lbs de Azúcar blanca",
+      "categoria": "Despensa",
+      "precio": 8.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "azucar.jpg"
+      ],
+      "descripcion": "Cinco libras de azúcar blanca para tus recetas.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5lb Queso criollo",
+      "categoria": "Lácteos",
+      "precio": 15.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "queso_criollo.jpg"
+      ],
+      "descripcion": "Cinco libras de queso criollo fresco.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Paleta de Cerdo asada 10-15lbs",
+      "categoria": "Carnicería",
+      "precio": 59.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "paleta_de_cerdo_asada.jpg"
+      ],
+      "descripcion": "Paleta de cerdo asada, lista para disfrutar.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Pernil de Cerdo asado 10-15lbs",
+      "categoria": "Carnicería",
+      "precio": 75.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pernil_cerdo_asado.jpg"
+      ],
+      "descripcion": "Pernil de cerdo asado de 10 a 15 libras.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 paquete de leche en polvo (1kg)",
+      "categoria": "Lácteos",
+      "precio": 16.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "leche_en_polvo.jpg"
+      ],
+      "descripcion": "Un paquete de leche en polvo de 1 kilogramo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Paquete de queso Gouda de 3kg",
+      "categoria": "Lácteos",
+      "precio": 60.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "queso_gouda.jpg"
+      ],
+      "descripcion": "Un paquete grande de queso Gouda de 3 kilogramos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Combo de comida",
+      "categoria": "Combos",
+      "precio": 60.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "combo_comida_2.jpg"
+      ],
+      "descripcion": "5 lbs de frijoles negros. 5 lbs de arroz. 10lbs pernil de cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Combo de comida",
+      "categoria": "Combos",
+      "precio": 61.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "combo_comida_1.jpg"
+      ],
+      "descripcion": "5 lbs de frijoles colorados. 5 lbs de arroz. 10 lbs pernil de cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Combo",
+      "categoria": "Combos",
+      "precio": 25.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "combo.jpg"
+      ],
+      "descripcion": "5 lbs de queso criollo. 2 paquetes de spaghetti. 2 latas de Puré Vima.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Combo de carne",
+      "categoria": "Combos",
+      "precio": 81.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "combo_carne.jpg"
+      ],
+      "descripcion": "2 paquetes de pollo, 10lbs cada uno. 5 lbs de pernil de ovejo. 10 lbs de pernil de Cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 paquete de pollo (10lbs) + (Aceite 900ml)",
+      "categoria": "Carnicería",
+      "precio": 21.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pollo.jpg"
+      ],
+      "descripcion": "Se entregan con un pomo de aceite de 900ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lbs Pernil de ovejo",
+      "categoria": "Carnicería",
+      "precio": 15.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pernil_ovejo.jpg"
+      ],
+      "descripcion": "Cinco libras de pernil de ovejo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "15lbs Pernil de cerdo",
+      "categoria": "Carnicería",
+      "precio": 55.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pernil_cerdo.jpg"
+      ],
+      "descripcion": "Quince libras de pernil de cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Paleta de Cerdo 10lbs",
+      "categoria": "Carnicería",
+      "precio": 37.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "paleta_cerdo.jpg"
+      ],
+      "descripcion": "Diez libras de paleta de cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Paquete hígado de pollo (1kg)",
+      "categoria": "Carnicería",
+      "precio": 9.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "higado_pollo.jpg"
+      ],
+      "descripcion": "Un paquete de hígado de pollo de 1 kilogramo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "10lbs Pernil de cerdo",
+      "categoria": "Carnicería",
+      "precio": 45.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pernil_cerdo.jpg"
+      ],
+      "descripcion": "Diez libras de pernil de cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lb de masa de cerdo deshuesada (lb)",
+      "categoria": "Carnicería",
+      "precio": 27.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "masa_cerdo.jpg"
+      ],
+      "descripcion": "Cinco libras de masa de cerdo deshuesada.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5lb de bistec de cerdo (lb)",
+      "categoria": "Carnicería",
+      "precio": 30.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "bistec_cerdo.jpg"
+      ],
+      "descripcion": "Cinco libras de bistec de cerdo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 paquetes de Pollo 10 lbs c/u",
+      "categoria": "Carnicería",
+      "precio": 50.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pollo.jpg"
+      ],
+      "descripcion": "Dos paquetes de pollo de 10 libras cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "10 lbs de Arroz criollo",
+      "categoria": "Despensa",
+      "precio": 15.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "arroz_criollo.jpg"
+      ],
+      "descripcion": "Diez libras de arroz criollo de calidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 pomos de Aceite (900ml) c/u",
+      "categoria": "Despensa",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "aceite.jpg"
+      ],
+      "descripcion": "Dos pomos de aceite de 900ml cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Paquetes de Frijoles colorados (1kg) c/u",
+      "categoria": "Despensa",
+      "precio": 15.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "frijoles_colorados.jpg"
+      ],
+      "descripcion": "Dos paquetes de frijoles colorados de 1 kilogramo cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lbs de Frijoles negros",
+      "categoria": "Despensa",
+      "precio": 23.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "frijoles_negros.jpg"
+      ],
+      "descripcion": "Cinco libras de frijoles negros.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 paquetes de Arroz de 1kg c/u",
+      "categoria": "Despensa",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "arroz.jpg"
+      ],
+      "descripcion": "Dos paquetes de arroz de 1 kilogramo cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lbs de Frijoles colorados",
+      "categoria": "Despensa",
+      "precio": 24.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "frijol_colorado_5lb.jpg"
+      ],
+      "descripcion": "Cinco libras de frijoles colorados.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 paquetes de Frijol negro (1kg) c/u",
+      "categoria": "Despensa",
+      "precio": 11.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "frijol_1kg.jpg"
+      ],
+      "descripcion": "Dos paquetes de frijol negro de 1 kilogramo cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Pizzas de Queso (24cm)",
+      "categoria": "Pizza",
+      "precio": 8.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_queso.jpg"
+      ],
+      "descripcion": "Se entrega con 2 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Pizzas de chorizo (24cm)",
+      "categoria": "Pizza",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_chorizo.jpg"
+      ],
+      "descripcion": "Se entrega con 2 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Pizzas de jamón (24cm)",
+      "categoria": "Pizza",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_jamon.jpg"
+      ],
+      "descripcion": "Se entrega con 2 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Pizzas de pimientos (24cm)",
+      "categoria": "Pizza",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_pimientos.jpg"
+      ],
+      "descripcion": "Se entrega con 2 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Pizzas de salchichas (24cm)",
+      "categoria": "Pizza",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_salchicha.jpg"
+      ],
+      "descripcion": "Se entrega con 2 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Pizza familiar de queso",
+      "categoria": "Pizza",
+      "precio": 25.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_familiar_queso.jpg"
+      ],
+      "descripcion": "Se entrega con 10 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Pizza familiar de jamón",
+      "categoria": "Pizza",
+      "precio": 26.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_familiar_jamon.jpg"
+      ],
+      "descripcion": "Se entrega con 10 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Pizza familiar mixta",
+      "categoria": "Pizza",
+      "precio": 28.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_familiar_mixta.jpg"
+      ],
+      "descripcion": "Se entrega con 10 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Pizza hawaiana (24cm)",
+      "categoria": "Pizza",
+      "precio": 12.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_hawaiana.jpg"
+      ],
+      "descripcion": "Se entrega con 2 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Familiar hawaiana",
+      "categoria": "Pizza",
+      "precio": 30.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "pizza_familiar_hawaiana.jpg"
+      ],
+      "descripcion": "Se entrega con 10 latas de refresco, sabor según disponibilidad.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "10 panquesitos",
+      "categoria": "Snacks",
+      "precio": 10.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "panquesitos.jpg"
+      ],
+      "descripcion": "Diez deliciosos panquesitos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "4 Potes de ensalada fría (1lt)",
+      "categoria": "Snacks",
+      "precio": 26.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "ensalada_fria.jpg"
+      ],
+      "descripcion": "Cuatro potes de ensalada fría de 1 litro cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "2 Potes de ensalada fría (1lt)",
+      "categoria": "Snacks",
+      "precio": 14.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "ensalada_fria.jpg"
+      ],
+      "descripcion": "Dos potes de ensalada fría de 1 litro cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Pote de ensalada fría (1lt)",
+      "categoria": "Snacks",
+      "precio": 8.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "ensalada_fria.jpg"
+      ],
+      "descripcion": "Un pote de ensalada fría de 1 litro.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 flan (500ml)",
+      "categoria": "Snacks",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "flan.jpg"
+      ],
+      "descripcion": "Un delicioso flan de 500ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 cake 3 leches + (Añadidos)",
+      "categoria": "Snacks",
+      "precio": 35.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "cake_tres_leches.jpg"
+      ],
+      "descripcion": "Se entregan con dos pomos de refresco 1.5 litros. Pedir con 3 días de antelación.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Caja de refresco Santa Cola (24und)",
+      "categoria": "Bebidas",
+      "precio": 20.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "refresco_cola.jpg"
+      ],
+      "descripcion": "Una caja de refresco Santa Cola con 24 unidades.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Caja de refresco Limón & lima (24ud)",
+      "categoria": "Bebidas",
+      "precio": 20.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "refresco_limon_lima.jpg"
+      ],
+      "descripcion": "Una caja de refresco de limón y lima con 24 unidades.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 caja de refresco Santa Orange (naranja) (24und)",
+      "categoria": "Bebidas",
+      "precio": 20.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "refresco_naranja.jpg"
+      ],
+      "descripcion": "Una caja de refresco sabor naranja con 24 unidades.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 caja de cerveza Bucanero (24u x 355ml)",
+      "categoria": "Bebidas",
+      "precio": 28.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "cerveza_bucanero.jpg"
+      ],
+      "descripcion": "Una caja de cerveza Bucanero con 24 unidades de 355ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 caja de cerveza Cristal (24u x 355ml)",
+      "categoria": "Bebidas",
+      "precio": 28.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "cerveza_cristal.jpg"
+      ],
+      "descripcion": "Una caja de cerveza Cristal con 24 unidades de 355ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco Santa limón & lima 6u",
+      "categoria": "Bebidas",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "refresco_limon_lima.jpg"
+      ],
+      "descripcion": "Paquete de 6 unidades de refresco Santa limón y lima.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco Santa Orange (naranja) 6u",
+      "categoria": "Bebidas",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "refresco_naranja.jpg"
+      ],
+      "descripcion": "Paquete de 6 unidades de refresco Santa naranja.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "Refresco Santa Cola 6u",
+      "categoria": "Bebidas",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "refresco_cola.jpg"
+      ],
+      "descripcion": "Paquete de 6 unidades de refresco Santa Cola.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 caja de malta Bucanero (24u x 355ml)",
+      "categoria": "Bebidas",
+      "precio": 34.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "malta_bucanero.jpg"
+      ],
+      "descripcion": "Una caja de malta Bucanero con 24 unidades de 355ml.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lb chorizo",
+      "categoria": "Embutidos",
+      "precio": 27.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "chorizo.jpg"
+      ],
+      "descripcion": "Cinco libras de chorizo.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "5 lb de jamón viking (lb)",
+      "categoria": "Embutidos",
+      "precio": 27.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "jamon_viking.jpg"
+      ],
+      "descripcion": "Cinco libras de jamón viking.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Tubo de jamón Bravo (2kg)",
+      "categoria": "Embutidos",
+      "precio": 45.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "jamon_bravo.jpg"
+      ],
+      "descripcion": "Un tubo de jamón marca Bravo de 2 kilogramos.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "3 Paquetes de salchichas (340g)",
+      "categoria": "Embutidos",
+      "precio": 8.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "salchichas.jpg"
+      ],
+      "descripcion": "Tres paquetes de salchichas de 340 gramos cada uno.",
+      "disponibilidad": true
+    },
+    {
+      "nombre": "1 Paquete de café (250g)",
+      "categoria": "Bebidas",
+      "precio": 7.99,
+      "descuento": 0,
+      "mas_vendido": false,
+      "nuevo": false,
+      "oferta": false,
+      "imagenes": [
+        "cafe.jpg"
+      ],
+      "descripcion": "Un paquete de café de 250 gramos.",
+      "disponibilidad": true
+    }
+  ]
+}
