@@ -1563,7 +1563,7 @@ body.sidebar-open {
 }
 
 .cart-total {
-    padding: 1rem 1rem 5rem 1rem;
+    padding: 1rem 1rem 7rem 1rem;
     border-top: 1px solid var(--gris-claro);
     background-color: var(--gris-claro);
 }
