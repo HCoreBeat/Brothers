@@ -129,19 +129,19 @@ function getCategoryIcon(category) {
         'belleza': 'spa',
         'automóviles': 'car',
         'herramientas': 'wrench',
-        'comida': 'utensils',
+        'combos': 'utensils',
         'bebidas': 'wine-glass-alt',
         'postres': 'cookie-bite',
         'frutas': 'apple-alt',
         'verduras': 'carrot',
-        'cárnicos': 'drumstick-bite',
+        'carnicería': 'drumstick-bite',
         'pescado': 'fish',
         'panadería': 'bread-slice',
         'lácteos': 'cheese',
-        'cafetería': 'coffee',
+        'snacks': 'coffee',
         'embutidos': 'hamburger',
         'despensa': 'shopping-basket',
-        'confituras': 'pizza-slice'
+        'pizza': 'pizza-slice'
     };
 
     return icons[category.toLowerCase().trim()] || 'tag'; // Convertimos a minúsculas y eliminamos espacios extra
@@ -517,28 +517,61 @@ function renderProducts(productsToRender = products) {
 
 function changeProductVariant(thumbElement, baseName, variantIndex, event) {
     if (event) event.stopPropagation();
-    
+
     const productCard = thumbElement.closest('.product-card');
     const product = products.find(p => p.baseName === baseName);
-    
+
     if (!product || !product.isGrouped) return;
-    
+
     // Actualizar la variante actual
     product.currentVariant = variantIndex;
     const variant = product.variants[variantIndex];
-    
+
+    // Recalcular precios para la variante seleccionada
+    const isOnSale = variant.oferta && variant.descuento > 0;
+    let finalPrice, discountPercent;
+    if (isOnSale) {
+        finalPrice = Number(variant.descuento).toFixed(2);
+        discountPercent = Math.round(100 - (variant.descuento * 100 / variant.precio));
+    } else {
+        finalPrice = Number(variant.precio).toFixed(2);
+        discountPercent = 0;
+    }
+
     // Actualizar la imagen principal
     productCard.querySelector('.product-image').src = `Images/products/${variant.imagenes[0]}`;
     productCard.querySelector('.product-image').alt = variant.cleanName;
     productCard.querySelector('.product-image').setAttribute('onclick', `showProductDetail('${encodeURIComponent(variant.nombre)}')`);
-    
+
     // Actualizar el título
     productCard.querySelector('.product-title').textContent = variant.cleanName;
     productCard.querySelector('.product-title').setAttribute('onclick', `showProductDetail('${encodeURIComponent(variant.nombre)}')`);
-    
+
+    // Actualizar la sección de precios
+    const priceContainer = productCard.querySelector('.price-container');
+    if (priceContainer) {
+        priceContainer.innerHTML = `
+            ${isOnSale ? `
+                <span class="original-price">${Number(variant.precio).toFixed(2)}<img src='Images/Zelle-Symbol.png' alt='Zelle' class='zelle-symbol'></span>
+                <span class="discount-percent">-${discountPercent}%</span>
+            ` : ''}
+            <span class="current-price">${finalPrice} <img src='Images/Zelle-Symbol.png' alt='Zelle' class='zelle-symbol'></span>
+        `;
+    }
+
+    // Actualizar los badges (Nuevo, Oferta, Más Vendido)
+    const productBadges = productCard.querySelector('.product-badges');
+    if (productBadges) {
+        productBadges.innerHTML = `
+            ${variant.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
+            ${variant.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
+            ${variant.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
+        `;
+    }
+
     // Actualizar el botón de añadir al carrito
     productCard.querySelector('.add-to-cart').setAttribute('onclick', `addToCart('${variant.nombre}', false, event)`);
-    
+
     // Actualizar las miniaturas activas
     const thumbs = productCard.querySelectorAll('.variant-thumb');
     thumbs.forEach((thumb, index) => {
