@@ -1,4 +1,4 @@
-const BACKEND = 'https://localhost:3000'; // Cambia esto a tu URL de backend
+const BACKEND = 'https://backend-brothers.onrender.com'; // Cambia esto a tu URL de backend
 
 document.addEventListener('DOMContentLoaded', () => {
     initializePaymentSystem();
@@ -389,12 +389,19 @@ async function sendPaymentToServer(orderPayload) { // <-- Ahora recibe el payloa
             body: JSON.stringify(orderPayload) // <-- Envía el payload completo
         });
 
+        const contentType = response.headers.get('content-type');
         if (!response.ok) {
+            // Intenta leer el texto de error
             const errorText = await response.text();
             throw new Error(`Error del backend: ${response.status} - ${errorText}`);
         }
 
-        return await response.json();
+        if (contentType && contentType.includes('application/json')) {
+            return await response.json();
+        } else {
+            const text = await response.text();
+            throw new Error('Error al enviar el pedido a Google Apps Script: Respuesta de Apps Script no JSON\n' + text);
+        }
     } catch (error) {
         console.error('Error en sendPaymentToServer (frontend):', error);
         throw error;
