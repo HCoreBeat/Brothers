@@ -211,7 +211,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Combo de comida",
+      "nombre": "Combo de comida (v1)",
       "categoria": "Combos",
       "precio": 60.99,
       "descuento": 0,
@@ -225,7 +225,7 @@
       "disponibilidad": true
     },
     {
-      "nombre": "Combo de comida",
+      "nombre": "Combo de comida (v2)",
       "categoria": "Combos",
       "precio": 61.99,
       "descuento": 0,
