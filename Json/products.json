@@ -3,7 +3,7 @@
     {
       "nombre": "Combo de 10 panes (suaves)",
       "categoria": "Despensa",
-      "precio": 3.99,
+      "precio": 1.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -17,7 +17,7 @@
     {
       "nombre": "Combo de 10 panes (flauta)",
       "categoria": "Despensa",
-      "precio": 6.99,
+      "precio": 4.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -31,7 +31,7 @@
     {
       "nombre": "Combo de 8 panes (hamburguesa)",
       "categoria": "Despensa",
-      "precio": 6.99,
+      "precio": 4.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -45,7 +45,7 @@
     {
       "nombre": "10-15Lbs Pernil de Cerdo asado + (Añadidos)",
       "categoria": "Carnicería",
-      "precio": 110.00,
+      "precio": 83.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -59,7 +59,7 @@
     {
       "nombre": "2 FIL de huevos 60u",
       "categoria": "Despensa",
-      "precio": 29.99,
+      "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -73,7 +73,7 @@
     {
       "nombre": "1 Fil de huevos 30u",
       "categoria": "Despensa",
-      "precio": 15.99,
+      "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -87,7 +87,7 @@
     {
       "nombre": "2 Paquetes de codito 500g c/u",
       "categoria": "Despensa",
-      "precio": 5.99,
+      "precio": 3.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -101,7 +101,7 @@
     {
       "nombre": "2 Paquetes de Spaghetti 500g c/u",
       "categoria": "Despensa",
-      "precio": 5.99,
+      "precio": 3.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -115,7 +115,7 @@
     {
       "nombre": "2 latas de Pasta de Tomate 400g c/u Vima",
       "categoria": "Despensa",
-      "precio": 5.99,
+      "precio": 4.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -129,7 +129,7 @@
     {
       "nombre": "5 lbs de Azúcar blanca",
       "categoria": "Despensa",
-      "precio": 8.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -143,7 +143,7 @@
     {
       "nombre": "5lb Queso criollo",
       "categoria": "Lácteos",
-      "precio": 15.99,
+      "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -157,7 +157,7 @@
     {
       "nombre": "Paleta de Cerdo asada 10-15lbs",
       "categoria": "Carnicería",
-      "precio": 59.99,
+      "precio": 49.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -171,7 +171,7 @@
     {
       "nombre": "Pernil de Cerdo asado 10-15lbs",
       "categoria": "Carnicería",
-      "precio": 75.99,
+      "precio": 53.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -185,7 +185,7 @@
     {
       "nombre": "1 paquete de leche en polvo (1kg)",
       "categoria": "Lácteos",
-      "precio": 16.99,
+      "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -199,7 +199,7 @@
     {
       "nombre": "1 Paquete de queso Gouda de 3kg",
       "categoria": "Lácteos",
-      "precio": 60.99,
+      "precio": 47.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -213,7 +213,7 @@
     {
       "nombre": "Combo de comida (v1)",
       "categoria": "Combos",
-      "precio": 60.99,
+      "precio": 50.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -227,7 +227,7 @@
     {
       "nombre": "Combo de comida (v2)",
       "categoria": "Combos",
-      "precio": 61.99,
+      "precio": 50.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -241,7 +241,7 @@
     {
       "nombre": "Combo",
       "categoria": "Combos",
-      "precio": 25.99,
+      "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -255,7 +255,7 @@
     {
       "nombre": "Combo de carne",
       "categoria": "Combos",
-      "precio": 81.99,
+      "precio": 71.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -269,7 +269,7 @@
     {
       "nombre": "1 paquete de pollo (10lbs) + (Aceite 900ml)",
       "categoria": "Carnicería",
-      "precio": 21.99,
+      "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -283,7 +283,7 @@
     {
       "nombre": "5 lbs Pernil de ovejo",
       "categoria": "Carnicería",
-      "precio": 15.99,
+      "precio": 10.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -297,7 +297,7 @@
     {
       "nombre": "15lbs Pernil de cerdo",
       "categoria": "Carnicería",
-      "precio": 55.99,
+      "precio": 45.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -311,7 +311,7 @@
     {
       "nombre": "Paleta de Cerdo 10lbs",
       "categoria": "Carnicería",
-      "precio": 37.99,
+      "precio": 31.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -325,7 +325,7 @@
     {
       "nombre": "Paquete hígado de pollo (1kg)",
       "categoria": "Carnicería",
-      "precio": 9.99,
+      "precio": 8.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -339,7 +339,7 @@
     {
       "nombre": "10lbs Pernil de cerdo",
       "categoria": "Carnicería",
-      "precio": 45.99,
+      "precio": 33.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -353,7 +353,7 @@
     {
       "nombre": "5 lb de masa de cerdo deshuesada (lb)",
       "categoria": "Carnicería",
-      "precio": 27.99,
+      "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -367,7 +367,7 @@
     {
       "nombre": "5lb de bistec de cerdo (lb)",
       "categoria": "Carnicería",
-      "precio": 30.99,
+      "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -381,7 +381,7 @@
     {
       "nombre": "2 paquetes de Pollo 10 lbs c/u",
       "categoria": "Carnicería",
-      "precio": 50.99,
+      "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -395,7 +395,7 @@
     {
       "nombre": "10 lbs de Arroz criollo",
       "categoria": "Despensa",
-      "precio": 15.99,
+      "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -409,7 +409,7 @@
     {
       "nombre": "2 pomos de Aceite (900ml) c/u",
       "categoria": "Despensa",
-      "precio": 10.99,
+      "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -423,7 +423,7 @@
     {
       "nombre": "2 Paquetes de Frijoles colorados (1kg) c/u",
       "categoria": "Despensa",
-      "precio": 15.99,
+      "precio": 9.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -437,7 +437,7 @@
     {
       "nombre": "5 lbs de Frijoles negros",
       "categoria": "Despensa",
-      "precio": 23.99,
+      "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -451,7 +451,7 @@
     {
       "nombre": "2 paquetes de Arroz de 1kg c/u",
       "categoria": "Despensa",
-      "precio": 10.99,
+      "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -465,7 +465,7 @@
     {
       "nombre": "5 lbs de Frijoles colorados",
       "categoria": "Despensa",
-      "precio": 24.99,
+      "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -479,7 +479,7 @@
     {
       "nombre": "2 paquetes de Frijol negro (1kg) c/u",
       "categoria": "Despensa",
-      "precio": 11.99,
+      "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -493,7 +493,7 @@
     {
       "nombre": "2 Pizzas de Queso (24cm)",
       "categoria": "Pizza",
-      "precio": 8.99,
+      "precio": 4.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -507,7 +507,7 @@
     {
       "nombre": "2 Pizzas de chorizo (24cm)",
       "categoria": "Pizza",
-      "precio": 10.99,
+      "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -521,7 +521,7 @@
     {
       "nombre": "2 Pizzas de jamón (24cm)",
       "categoria": "Pizza",
-      "precio": 10.99,
+      "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -535,7 +535,7 @@
     {
       "nombre": "2 Pizzas de pimientos (24cm)",
       "categoria": "Pizza",
-      "precio": 10.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -549,7 +549,7 @@
     {
       "nombre": "2 Pizzas de salchichas (24cm)",
       "categoria": "Pizza",
-      "precio": 10.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -563,7 +563,7 @@
     {
       "nombre": "1 Pizza familiar de queso",
       "categoria": "Pizza",
-      "precio": 25.99,
+      "precio": 12.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -577,7 +577,7 @@
     {
       "nombre": "1 Pizza familiar de jamón",
       "categoria": "Pizza",
-      "precio": 26.99,
+      "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -647,7 +647,7 @@
     {
       "nombre": "4 Potes de ensalada fría (1lt)",
       "categoria": "Snacks",
-      "precio": 26.99,
+      "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -661,7 +661,7 @@
     {
       "nombre": "2 Potes de ensalada fría (1lt)",
       "categoria": "Snacks",
-      "precio": 14.99,
+      "precio": 10.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -675,7 +675,7 @@
     {
       "nombre": "1 Pote de ensalada fría (1lt)",
       "categoria": "Snacks",
-      "precio": 8.99,
+      "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -689,7 +689,7 @@
     {
       "nombre": "1 flan (500ml)",
       "categoria": "Snacks",
-      "precio": 7.99,
+      "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -703,7 +703,7 @@
     {
       "nombre": "1 cake 3 leches + (Añadidos)",
       "categoria": "Snacks",
-      "precio": 35.99,
+      "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -717,7 +717,7 @@
     {
       "nombre": "1 Caja de refresco Santa Cola (24und)",
       "categoria": "Bebidas",
-      "precio": 20.99,
+      "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -731,7 +731,7 @@
     {
       "nombre": "1 Caja de refresco Limón & lima (24ud)",
       "categoria": "Bebidas",
-      "precio": 20.99,
+      "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -745,7 +745,7 @@
     {
       "nombre": "1 caja de refresco Santa Orange (naranja) (24und)",
       "categoria": "Bebidas",
-      "precio": 20.99,
+      "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -759,7 +759,7 @@
     {
       "nombre": "1 caja de cerveza Bucanero (24u x 355ml)",
       "categoria": "Bebidas",
-      "precio": 28.99,
+      "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -773,7 +773,7 @@
     {
       "nombre": "1 caja de cerveza Cristal (24u x 355ml)",
       "categoria": "Bebidas",
-      "precio": 28.99,
+      "precio": 25.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -787,7 +787,7 @@
     {
       "nombre": "Refresco Santa limón & lima 6u",
       "categoria": "Bebidas",
-      "precio": 7.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -801,7 +801,7 @@
     {
       "nombre": "Refresco Santa Orange (naranja) 6u",
       "categoria": "Bebidas",
-      "precio": 7.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -815,7 +815,7 @@
     {
       "nombre": "Refresco Santa Cola 6u",
       "categoria": "Bebidas",
-      "precio": 7.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -829,7 +829,7 @@
     {
       "nombre": "1 caja de malta Bucanero (24u x 355ml)",
       "categoria": "Bebidas",
-      "precio": 34.99,
+      "precio": 27.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -843,7 +843,7 @@
     {
       "nombre": "5 lb chorizo",
       "categoria": "Embutidos",
-      "precio": 27.99,
+      "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -857,7 +857,7 @@
     {
       "nombre": "5 lb de jamón viking (lb)",
       "categoria": "Embutidos",
-      "precio": 27.99,
+      "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -871,7 +871,7 @@
     {
       "nombre": "1 Tubo de jamón Bravo (2kg)",
       "categoria": "Embutidos",
-      "precio": 45.99,
+      "precio": 35.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -885,7 +885,7 @@
     {
       "nombre": "3 Paquetes de salchichas (340g)",
       "categoria": "Embutidos",
-      "precio": 8.99,
+      "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
@@ -899,7 +899,7 @@
     {
       "nombre": "1 Paquete de café (250g)",
       "categoria": "Despensa",
-      "precio": 7.99,
+      "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
       "nuevo": false,
