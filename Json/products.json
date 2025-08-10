@@ -5,8 +5,8 @@
       "categoria": "Despensa",
       "precio": 1.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pan_suave.jpg"
@@ -19,8 +19,8 @@
       "categoria": "Despensa",
       "precio": 4.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "panes_flauta.jpg"
@@ -33,8 +33,8 @@
       "categoria": "Despensa",
       "precio": 4.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pan_hamburguesa.jpg"
@@ -47,8 +47,8 @@
       "categoria": "Carnicería",
       "precio": 83.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pernil_cerdo_asado.jpg"
@@ -62,7 +62,7 @@
       "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "huevo.jpg"
@@ -76,7 +76,7 @@
       "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "huevo.jpg"
@@ -90,7 +90,7 @@
       "precio": 3.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "codito.jpg"
@@ -104,7 +104,7 @@
       "precio": 3.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "espagueti.jpg"
@@ -118,7 +118,7 @@
       "precio": 4.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pasta_de_tomate_vima.jpg"
@@ -132,7 +132,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "azucar.jpg"
@@ -146,7 +146,7 @@
       "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "queso_criollo.jpg"
@@ -160,7 +160,7 @@
       "precio": 49.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "paleta_de_cerdo_asada.jpg"
@@ -173,8 +173,8 @@
       "categoria": "Carnicería",
       "precio": 53.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pernil_cerdo_asado.jpg"
@@ -188,7 +188,7 @@
       "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "leche_en_polvo.jpg"
@@ -202,7 +202,7 @@
       "precio": 47.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "queso_gouda.jpg"
@@ -216,7 +216,7 @@
       "precio": 50.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "combo_comida_2.jpg"
@@ -230,7 +230,7 @@
       "precio": 50.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "combo_comida_1.jpg"
@@ -244,7 +244,7 @@
       "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "combo.jpg"
@@ -257,8 +257,8 @@
       "categoria": "Combos",
       "precio": 71.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "combo_carne.jpg"
@@ -271,8 +271,8 @@
       "categoria": "Carnicería",
       "precio": 15.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pollo.jpg"
@@ -286,7 +286,7 @@
       "precio": 10.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pernil_ovejo.jpg"
@@ -299,8 +299,8 @@
       "categoria": "Carnicería",
       "precio": 45.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pernil_cerdo.jpg"
@@ -314,7 +314,7 @@
       "precio": 31.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "paleta_cerdo.jpg"
@@ -328,7 +328,7 @@
       "precio": 8.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "higado_pollo.jpg"
@@ -342,7 +342,7 @@
       "precio": 33.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pernil_cerdo.jpg"
@@ -356,7 +356,7 @@
       "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "masa_cerdo.jpg"
@@ -370,7 +370,7 @@
       "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "bistec_cerdo.jpg"
@@ -384,7 +384,7 @@
       "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pollo.jpg"
@@ -398,7 +398,7 @@
       "precio": 11.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "arroz_criollo.jpg"
@@ -412,7 +412,7 @@
       "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "aceite.jpg"
@@ -426,7 +426,7 @@
       "precio": 9.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "frijoles_colorados.jpg"
@@ -440,7 +440,7 @@
       "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "frijoles_negros.jpg"
@@ -454,7 +454,7 @@
       "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "arroz.jpg"
@@ -468,7 +468,7 @@
       "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "frijol_colorado_5lb.jpg"
@@ -482,7 +482,7 @@
       "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "frijol_1kg.jpg"
@@ -495,8 +495,8 @@
       "categoria": "Pizza",
       "precio": 4.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_queso.jpg"
@@ -509,8 +509,8 @@
       "categoria": "Pizza",
       "precio": 6.99,
       "descuento": 0,
-      "mas_vendido": false,
-      "nuevo": false,
+      "mas_vendido": true,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_chorizo.jpg"
@@ -524,7 +524,7 @@
       "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_jamon.jpg"
@@ -538,7 +538,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_pimientos.jpg"
@@ -552,7 +552,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_salchicha.jpg"
@@ -566,7 +566,7 @@
       "precio": 12.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_familiar_queso.jpg"
@@ -580,7 +580,7 @@
       "precio": 15.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_familiar_jamon.jpg"
@@ -594,7 +594,7 @@
       "precio": 28.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_familiar_mixta.jpg"
@@ -608,7 +608,7 @@
       "precio": 12.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_hawaiana.jpg"
@@ -622,7 +622,7 @@
       "precio": 30.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "pizza_familiar_hawaiana.jpg"
@@ -636,7 +636,7 @@
       "precio": 10.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "panquesitos.jpg"
@@ -650,7 +650,7 @@
       "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "ensalada_fria.jpg"
@@ -664,7 +664,7 @@
       "precio": 10.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "ensalada_fria.jpg"
@@ -678,7 +678,7 @@
       "precio": 7.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "ensalada_fria.jpg"
@@ -692,7 +692,7 @@
       "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "flan.jpg"
@@ -706,7 +706,7 @@
       "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "cake_tres_leches.jpg"
@@ -720,7 +720,7 @@
       "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "refresco_cola.jpg"
@@ -734,7 +734,7 @@
       "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "refresco_limon_lima.jpg"
@@ -748,7 +748,7 @@
       "precio": 17.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "refresco_naranja.jpg"
@@ -762,7 +762,7 @@
       "precio": 23.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "cerveza_bucanero.jpg"
@@ -776,7 +776,7 @@
       "precio": 25.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "cerveza_cristal.jpg"
@@ -790,7 +790,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "refresco_limon_lima.jpg"
@@ -804,7 +804,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "refresco_naranja.jpg"
@@ -818,7 +818,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "refresco_cola.jpg"
@@ -832,7 +832,7 @@
       "precio": 27.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "malta_bucanero.jpg"
@@ -846,7 +846,7 @@
       "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "chorizo.jpg"
@@ -860,7 +860,7 @@
       "precio": 21.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "jamon_viking.jpg"
@@ -874,7 +874,7 @@
       "precio": 35.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "jamon_bravo.jpg"
@@ -888,7 +888,7 @@
       "precio": 6.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "salchichas.jpg"
@@ -902,7 +902,7 @@
       "precio": 5.99,
       "descuento": 0,
       "mas_vendido": false,
-      "nuevo": false,
+      "nuevo": true,
       "oferta": false,
       "imagenes": [
         "cafe.jpg"

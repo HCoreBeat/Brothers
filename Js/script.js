@@ -2,6 +2,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let products = [];
 let currentProduct = null;
 let categories = [];
+let topProductsScrollPosition = 0;
 
 let storeStatus = {
     abierto: true,
@@ -12,6 +13,7 @@ let storeStatus = {
 function goToHome() {
     window.location.hash = '';
     hideProductDetail();
+    toggleTopProductsPanel(true);
     renderProducts();
 }
 
@@ -21,8 +23,14 @@ window.addEventListener('hashchange', handleRouteChange);
 
 function handleRouteChange() {
     const productName = decodeURIComponent(window.location.hash.substring(1));
+    const searchInput = document.getElementById('search-input');
+    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    
     if (!productName) {
         hideProductDetail();
+        if (!searchTerm) {
+            toggleTopProductsPanel(true); // Mostrar el panel solo si no hay búsqueda activa
+        }
     } else {
         showProductDetail(productName);
     }
@@ -84,6 +92,7 @@ async function loadProducts() {
         categories = ['Todo', ...new Set(products.map(product => product.categoria))];
         renderCategories();
         initPriceFilter();
+        renderTopProducts(); // Renderizar productos top
         renderProducts();
         updateCartCount();
         updateCart();
@@ -429,92 +438,6 @@ function closeEmptyCartModal() {
     }, 300);
 }
 
-// Renderizar productos con precios corregidos
-function renderProducts(productsToRender = products) {
-    const container = document.getElementById('products-container');
-    const searchInput = document.getElementById('search-input');
-    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
-
-    // Mostrar el banner solo si la barra de búsqueda está vacía
-    if (bannerContainer) {
-        if (!searchTerm) {
-            bannerContainer.style.display = 'block';
-        } else {
-            bannerContainer.style.display = 'none';
-        }
-    }
-
-    if (!container) return;
-    container.innerHTML = '';
-
-    productsToRender.forEach(product => {
-        const displayProduct = product.isGrouped ? product.variants[product.currentVariant] : product;
-        const cleanName = displayProduct.nombre.replace(/'/g, "\\'");
-        const productEl = document.createElement('div');
-        productEl.className = 'product-card';
-        const isOnSale = displayProduct.oferta && displayProduct.descuento > 0;
-        let finalPrice, discountPercent;
-        if (isOnSale) {
-            finalPrice = Number(displayProduct.descuento).toFixed(2); // Ahora es el precio final
-            discountPercent = Math.round(100 - (displayProduct.descuento * 100 / displayProduct.precio));
-        } else {
-            finalPrice = Number(displayProduct.precio).toFixed(2);
-            discountPercent = 0;
-        }
-        // Miniaturas de variantes
-        const variantThumbnails = product.isGrouped ? `
-            <div class="variant-thumbnails-container">
-                <div class="variant-thumbnails">
-                    ${product.variants.map((variant, index) => `
-                        <div class="variant-thumb ${index === product.currentVariant ? 'active' : ''}" 
-                             onclick="changeProductVariant(this, '${product.baseName}', ${index}, event)">
-                            <img src="Images/products/${variant.imagenes[0]}" alt="${variant.variantName}">
-                            <span class="variant-tooltip">${variant.variantName}</span>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        ` : '';
-        productEl.innerHTML = `
-            <div class="product-image-container">
-                <div class="product-badges">
-                    ${displayProduct.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
-                    ${displayProduct.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
-                    ${displayProduct.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
-                </div>
-                <img src="Images/products/${displayProduct.imagenes[0]}" 
-                    class="product-image" 
-                    alt="${displayProduct.cleanName}"
-                    onclick="showProductDetail('${encodeURIComponent(displayProduct.nombre)}')">
-            </div>
-            <div class="product-info">
-                <div class="product-category">
-                    ${displayProduct.categoria}
-                </div>
-                <h3 class="product-title" onclick="showProductDetail('${encodeURIComponent(displayProduct.nombre)}')">
-                    ${displayProduct.cleanName}
-                </h3>
-                ${variantThumbnails}
-                <div class="price-container">
-                    ${isOnSale ? `
-                        <span class="original-price">${Number(displayProduct.precio).toFixed(2)}<img src='Images/Zelle-Symbol.png' alt='Zelle' class='zelle-symbol'></span>
-                        <span class="discount-percent">-${discountPercent}%</span>
-                    ` : ''}
-                    <span class="current-price">${finalPrice} <img src='Images/Zelle-Symbol.png' alt='Zelle' class='zelle-symbol'></span>
-                </div>
-                <div class="quantity-section">
-                    <button class="add-to-cart" onclick="addToCart('${displayProduct.nombre}', false, event)">
-                        <i class="fas fa-cart-plus"></i>
-                        <span>Añadir al carrito</span>
-                    </button>
-                </div>
-            </div>
-        `;
-        container.appendChild(productEl);
-    });
-    showBannerIfNeeded();
-}
-
 function changeProductVariant(thumbElement, baseName, variantIndex, event) {
     if (event) event.stopPropagation();
 
@@ -563,9 +486,9 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
     const productBadges = productCard.querySelector('.product-badges');
     if (productBadges) {
         productBadges.innerHTML = `
-            ${variant.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
-            ${variant.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
-            ${variant.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
+                ${variant.nuevo ? '<img src="Images/badge_new.png" alt="Nuevo" class="badge-image">' : ''}
+                ${variant.oferta ? '<img src="Images/oferta.png" alt="Oferta" class="badge-image">' : ''}
+                ${variant.mas_vendido ? '<img src="Images/badge_top.png" alt="Top" class="badge-image">' : ''}
         `;
     }
 
@@ -586,6 +509,7 @@ function changeProductVariant(thumbElement, baseName, variantIndex, event) {
 // Mostrar detalle del producto con precios corregidos
 function showProductDetail(productName) {
     window.scrollTo({top: 0});
+    toggleTopProductsPanel(false); // Ocultar el panel de productos top
     const decodedName = decodeURIComponent(productName);
 
     // Ocultar el banner al entrar al detalle del producto
@@ -689,9 +613,9 @@ function showProductDetail(productName) {
                     return `
                         <div class="suggested-item">
                             <div class="suggested-badges">
-                                ${suggested.nuevo ? '<span class="badge nuevo">NUEVO</span>' : ''}
-                                ${suggested.oferta ? '<span class="badge oferta">OFERTA</span>' : ''}
-                                ${suggested.mas_vendido ? '<span class="badge mas-vendido">TOP</span>' : ''}
+                                ${suggested.nuevo ? '<img src="Images/badge_new.png" alt="Nuevo" class="badge-image">' : ''}
+                                ${suggested.oferta ? '<img src="Images/oferta.png" alt="Oferta" class="badge-image">' : ''}
+                                ${suggested.mas_vendido ? '<img src="Images/badge_top.png" alt="Top" class="badge-image">' : ''}
                             </div>
                             <div class="suggested-image" onclick="showProductDetail('${encodeURIComponent(suggested.nombre)}')">
                                 <img src="Images/products/${suggested.imagenes[0]}" alt="${suggested.cleanName || suggested.nombre}">
@@ -994,6 +918,8 @@ function changeMainImage(imgSrc) {
 function hideProductDetail() {
     const productsContainer = document.getElementById('products-container');
     const detailContainer = document.getElementById('product-detail');
+    
+    toggleTopProductsPanel(true); // Mostrar el panel de productos top
     
     if (productsContainer) {
         productsContainer.style.display = 'grid';
@@ -1461,6 +1387,13 @@ function renderProducts(productsToRender = products) {
     const container = document.getElementById('products-container');
     const searchInput = document.getElementById('search-input');
     const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    
+    // Mostrar el panel de productos top solo en la página principal y cuando no hay búsqueda
+    if (!window.location.hash && !searchTerm) {
+        toggleTopProductsPanel(true);
+    } else {
+        toggleTopProductsPanel(false);
+    }
 
     // Mostrar el banner solo si la barra de búsqueda está vacía
     if (bannerContainer) {
@@ -1505,9 +1438,9 @@ function renderProducts(productsToRender = products) {
         productEl.innerHTML = `
             <div class="product-image-container">
                 <div class="product-badges">
-                    ${displayProduct.nuevo ? '<span class="badge nuevo"><i class="fas fa-star"></i> NUEVO</span>' : ''}
-                    ${displayProduct.oferta ? '<span class="badge oferta"><i class="fas fa-tag"></i> OFERTA</span>' : ''}
-                    ${displayProduct.mas_vendido ? '<span class="badge mas-vendido"><i class="fas fa-trophy"></i> TOP</span>' : ''}
+                    ${displayProduct.nuevo ? '<img src="Images/badge_new.png" alt="Nuevo" class="badge-image">' : ''}
+                    ${displayProduct.oferta ? '<img src="Images/oferta.png" alt="Oferta" class="badge-image">' : ''}
+                    ${displayProduct.mas_vendido ? '<img src="Images/badge_top.png" alt="Top" class="badge-image">' : ''}
                 </div>
                 <img src="Images/products/${displayProduct.imagenes[0]}" 
                     class="product-image" 
@@ -1572,6 +1505,121 @@ function hideProductDetail() {
 // --- Fin de la funcionalidad del header ---
 
 // Inicialización
+// Función para renderizar productos top
+function updateTopProductsNavigation() {
+    const container = document.getElementById('topProductsContainer');
+    const prevBtn = document.querySelector('.top-products-nav.prev');
+    const nextBtn = document.querySelector('.top-products-nav.next');
+    
+    if (!container || !prevBtn || !nextBtn) return;
+
+    const isAtStart = container.scrollLeft <= 0;
+    const isAtEnd = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+
+    prevBtn.classList.toggle('disabled', isAtStart);
+    nextBtn.classList.toggle('disabled', isAtEnd);
+}
+
+function scrollTopProducts(direction) {
+    const container = document.getElementById('topProductsContainer');
+    if (!container) return;
+
+    const scrollAmount = container.offsetWidth * 0.8;
+    const newPosition = direction === 'next' 
+        ? container.scrollLeft + scrollAmount 
+        : container.scrollLeft - scrollAmount;
+    
+    container.scrollTo({
+        left: newPosition,
+        behavior: 'smooth'
+    });
+}
+
+function toggleTopProductsPanel(show) {
+    const panel = document.getElementById('topProductsPanel');
+    if (!panel) return;
+    
+    if (show === undefined) {
+        show = !panel.classList.contains('hidden');
+    }
+    
+    panel.classList.toggle('hidden', !show);
+}
+
+function renderTopProducts() {
+    const topProductsContainer = document.getElementById('topProductsContainer');
+    if (!topProductsContainer) return;
+
+    // Obtener todos los productos top, incluyendo las variantes
+    let topProducts = [];
+    products.forEach(product => {
+        if (product.isGrouped) {
+            // Para productos agrupados, incluir cada variante que sea top
+            product.variants.forEach(variant => {
+                if (variant.mas_vendido) {
+                    topProducts.push({
+                        ...variant,
+                        cleanName: variant.nombre.replace(/\(v\d+\)\s*/g, '')
+                    });
+                }
+            });
+        } else if (product.mas_vendido) {
+            // Para productos individuales, incluir si es top
+            topProducts.push(product);
+        }
+    });
+
+    // Ordenar por precio y limitar a 10
+    topProducts = topProducts.slice(0, 10);
+
+    topProductsContainer.innerHTML = topProducts.map(product => {
+        const finalPrice = product.descuento > 0 
+            ? product.precio - (product.precio * product.descuento / 100)
+            : product.precio;
+        
+        const discountPercent = product.descuento > 0
+            ? Math.round(100 - (product.descuento * 100 / product.precio))
+            : 0;
+
+        return `
+            <div class="top-product-card" onclick="showProductDetail('${encodeURIComponent(product.nombre)}')">
+                <div class="top-product-image-container">
+                    <img src="Images/products/${product.imagenes[0]}" 
+                         alt="${product.cleanName}" 
+                         class="top-product-image">
+                    ${product.oferta ? `<span class="top-discount-badge">-${discountPercent}%</span>` : ''}
+                </div>
+                <div class="top-product-info">
+                    <h3 class="top-product-name">${product.cleanName}</h3>
+                    <div class="top-product-price-container">
+                        ${product.descuento > 0 ? `
+                            <span class="top-original-price">$${product.precio.toFixed(2)}</span>
+                        ` : ''}
+                        <div class="top-product-price">$${finalPrice.toFixed(2)}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Configurar los botones de navegación
+    const prevBtn = document.querySelector('.top-products-nav.prev');
+    const nextBtn = document.querySelector('.top-products-nav.next');
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => scrollTopProducts('prev'));
+    }
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => scrollTopProducts('next'));
+    }
+
+    // Configurar el evento de scroll
+    topProductsContainer.addEventListener('scroll', updateTopProductsNavigation);
+    
+    // Actualizar estado inicial de los botones
+    updateTopProductsNavigation();
+}
+
 // Reemplaza la línea de DOMContentLoaded para cargar productos y estado
 // document.addEventListener('DOMContentLoaded', loadProducts);
 document.addEventListener('DOMContentLoaded', () => {
